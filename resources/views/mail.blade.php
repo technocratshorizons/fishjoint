@@ -71,7 +71,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js" ></script>
 @endsection
- @section('page-bottom-script')
+ @section('mail-script')
     <script>
 
         $(document).ready(function(){

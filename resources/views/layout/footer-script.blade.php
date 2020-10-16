@@ -7,7 +7,26 @@
 
 {{-- Page script --}}
 @yield('page-script')
+<script type="text/javascript">
+    $(function(){
+    $(".dropdown").hover(
+       function() {
+           $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+           $(this).toggleClass('open');
+           $('b', this).toggleClass("caret caret-up");
+       },
+       function() {
+           $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+           $(this).toggleClass('open');
+           $('b', this).toggleClass("caret caret-up");
+       });
+    });
+
+    // page bottom script
 
 
-{{-- page bottom script --}}
-@yield('page-bottom-script')
+ </script>
+ @yield('mail-script')
+ @yield('page-bottom-script')
+
+
