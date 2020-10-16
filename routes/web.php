@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MailController;
+use App\Http\Controllers\MailerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +25,4 @@ Route::get('/menu', function () {
 Route::get('/about-us', function () {
     return view('about-us');
 });
-Route::post('/send mail',[MailController::class,'Mailer'])->name('mail');
+Route::post('/sendmail',[MailerController::class,'Mailer'])->name('mail');

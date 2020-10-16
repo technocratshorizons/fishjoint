@@ -1,43 +1,55 @@
+
 <!-- get in touch start -->
 <section class="contact-us grey">
     <div class="container">
        <div class="row">
           <div class="col-md-12">
              <h1 class="heading">Get in Touch</h1>
-             <form id="sendForm">
+             <form id="sendForm" action="">
+                <div id="success" class="alert alert-success col-md-6"></div>
+                 @csrf
                 <div class="row">
                    <div class="col-md-6 col-lg-4">
                       <div class="form-group">
-                         <input type="text" class="form-control form-field" id="name" placeholder="Your Name" required>
+                         <input type="text" class="form-control form-field" name="name" id="name" placeholder="Your Name" >
+                         <label id="name-error" class="error" for="name"style="display:none;"> </label>
                       </div>
                    </div>
                    <div class="col-md-6 col-lg-4">
                       <div class="form-group">
-                         <input type="Email" class="form-control form-field" id="email" placeholder="Email Address *" required>
+                         <input type="Email" class="form-control form-field" name="email" id="email" placeholder="Email Address *" >
+                         <label id="email-error" class="error" for="email"style="display:none;"> </label>
+
                       </div>
                    </div>
                 </div>
                 <div class="row">
                    <div class="col-md-12 col-lg-8">
                       <div class="form-group">
-                         <input type="number" class="form-control form-field" id="email" placeholder="Phone Number *"required>
+                         <input type="number" class="form-control form-field" name="phone_no" id="phone_no" placeholder="Phone Number *">
+                         <label id="number-error" class="error" for="number"style="display:none;"> </label>
+
                       </div>
                    </div>
                 </div>
                 <div class="row">
                    <div class="col-md-12 col-lg-8">
                       <div class="form-group">
-                         <textarea class="form-control form-area" placeholder="How we can serve you ?" id="exampleFormControlTextarea1" rows="5" required></textarea>
+                         <textarea class="form-control form-area" name="message" placeholder="How we can serve you ?" id="serve" rows="5" ></textarea>
+                         <label id="message-error" class="error" for="message"style="display:none;"> </label>
+
                       </div>
                    </div>
                 </div>
                 <div class="form-check form-check-inline check-box">
-                   <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" required>
-                   <label class="form-check-label" for="inlineCheckbox1"> Sign up for our email list for updates, promotions, and more.</label>
+                   <input class="form-check-input" name="check" type="checkbox" id="check" value="option1" >
+                   <label class="form-check-label" for="check"> Sign up for our email list for updates, promotions, and more.</label>
                 </div>
                 <br>
+                <label id="check-error" class="error" for="check" style="display: none"></label>
                 <div class="form-button">
-                   <a href="javascript:void(0);"id="sendbtn" class="primary-Btn">Send <i class="las la-arrow-right"></i></a>
+                   <button type="submit" id="sendbtn" data-style="expand-right" class="primary-Btn">Send <i class="las la-arrow-right"></i></button>
+
                 </div>
                 <div class="col-md-12 col-lg-8">
                    <p class="form-text">
@@ -52,4 +64,110 @@
        <img  class="contact-img" src="img/contact-img.png" alt="img">
     </div>
  </section>
+@section('page-script')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.6/spin.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.6/ladda.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.6/ladda.jquery.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js" ></script>
+@endsection
+ @section('page-bottom-script')
+    <script>
 
+        $(document).ready(function(){
+            $('#success').hide();
+            $('#sendForm').on('submit',function(e){
+                e.preventDefault();
+                var validation = $('#sendForm').validate({
+                    rules:{
+                        name:{
+                            required:true,
+                        },
+                        email:{
+                            required:true,
+                            email:true,
+                        },
+                        phone_no:{
+                            required:true,
+                        }
+                        ,
+                        message:{
+                            required:true
+                        },
+                        check:{
+                            required:true
+                        }
+                    },
+
+                });
+                // var valid = validation.valid();
+                var valid = $("#sendForm").valid();
+
+                if(!valid){
+                    validation.focusInvalid();
+                    return false;
+                }
+                else{
+
+                    var form = $('#sendForm')[0];
+                    var formdata = new FormData(form);
+                    var l = Ladda.create(document.querySelector('#sendbtn'));
+                    $.ajax({
+                        url:"{{route('mail')}}",
+                        method:'post',
+                        data:formdata,
+                        dataType:'json',
+                        processData: false,
+                        contentType: false,
+                        beforeSend:function(){
+                            l.start();
+
+                        },
+                        success:function(res)
+                        {
+                            l.stop();
+                            if(!res.success && res.status==2)
+                            {
+                                $.each( res.error, function( key, value ) {
+                                $('#'+key+'-error').show().html(value);
+                                $('#'+key).addClass('is-invalid');
+                                });
+                            }
+                            else if(res.success && res.status ==1)
+                            {
+                                l.stop();
+                                $('#sendForm').trigger('reset');
+                                $('#success').html(res.message);
+                                $('#success').show();
+                            }
+                        },
+                        error: function (jqXHR, exception) {
+                            l.stop();
+                            var msg = '';
+                            if (jqXHR.status === 0) {
+                            msg = 'Not connect.\n Verify Network.';
+                            } else if (jqXHR.status == 404) {
+                                msg = 'Requested page not found. [404]';
+                            } else if (jqXHR.status == 500) {
+                                msg = 'Internal Server Error [500].';
+                            } else if (exception === 'parsererror') {
+                                msg = 'Requested JSON parse failed.';
+                            } else if (exception === 'timeout') {
+                                msg = 'Time out error.';
+                            } else if (exception === 'abort') {
+                                msg = 'Ajax request aborted.';
+                            } else {
+                                msg = 'Uncaught Error.\n' + jqXHR.responseText;
+                             }
+                             alert(msg);
+                            },
+                    });
+
+
+                }
+
+            });
+
+        });
+    </script>
+ @endsection
