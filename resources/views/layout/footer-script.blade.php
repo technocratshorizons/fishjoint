@@ -23,10 +23,6 @@
     });
 
     // page bottom script
-
-
- </script>
- @yield('mail-script')
- @yield('page-bottom-script')
-
-
+</script>
+@yield('mail-script')
+@yield('page-bottom-script')

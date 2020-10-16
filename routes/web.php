@@ -25,4 +25,4 @@ Route::get('/menu', function () {
 Route::get('/about-us', function () {
     return view('about-us');
 });
-Route::post('/sendmail',[MailerController::class,'Mailer'])->name('mail');
+Route::post('/sendmail', [MailerController::class,'sendRequest'])->name('mail');

@@ -54,7 +54,7 @@
     </div>
     <div class="bottom-footer">
         <div class="col-md-12">
-            <p>Copyright © 2020 The Fish Joint - All Rights Reserved.</p>
+            <p>Copyright © {{ date('Y') }} The Fish Joint - All Rights Reserved.</p>
         </div>
     </div>
     {{-- footer end --}}

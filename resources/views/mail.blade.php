@@ -6,52 +6,55 @@
           <div class="col-md-12">
              <h1 class="heading">Get in Touch</h1>
              <form id="sendForm" action="">
-                <div id="success" class="alert alert-success col-md-6"></div>
+                <div id="notification" class="alert alert-success col-md-6 d-none">
+
+                </div>
                  @csrf
                 <div class="row">
-                   <div class="col-md-6 col-lg-4">
+                   <div class="col-md-6 col-lg-4 mb-3">
                       <div class="form-group">
-                         <input type="text" class="form-control form-field" name="name" id="name" placeholder="Your Name" >
-                         <label id="name-error" class="error" for="name"style="display:none;"> </label>
+                         <input type="text" class="form-control form-field required" name="name" id="name" placeholder="Your Name" >
+                         <label id="name-error" class="error mb-0" for="name"style="display:none;"> </label>
                       </div>
                    </div>
-                   <div class="col-md-6 col-lg-4">
+                   <div class="col-md-6 col-lg-4 mb-3">
                       <div class="form-group">
-                         <input type="Email" class="form-control form-field" name="email" id="email" placeholder="Email Address *" >
-                         <label id="email-error" class="error" for="email"style="display:none;"> </label>
+                         <input type="email" class="form-control form-field email required" name="email" id="email" placeholder="Email Address *" >
+                         <label id="email-error" class="error mb-0" for="email"style="display:none;"> </label>
 
                       </div>
                    </div>
                 </div>
                 <div class="row">
-                   <div class="col-md-12 col-lg-8">
+                   <div class="col-md-12 col-lg-8 mb-3">
                       <div class="form-group">
-                         <input type="number" class="form-control form-field" name="phone_no" id="phone_no" placeholder="Phone Number *">
-                         <label id="number-error" class="error" for="number"style="display:none;"> </label>
+                         <input type="number" class="form-control form-field required" name="phone_no" id="phone_no" placeholder="Phone Number *">
+                         <label id="number-error" class="error mb-0" for="number"style="display:none;"> </label>
 
                       </div>
                    </div>
                 </div>
                 <div class="row">
-                   <div class="col-md-12 col-lg-8">
+                   <div class="col-md-12 col-lg-8 mb-3">
                       <div class="form-group">
-                         <textarea class="form-control form-area" name="message" placeholder="How we can serve you ?" id="serve" rows="5" ></textarea>
-                         <label id="message-error" class="error" for="message"style="display:none;"> </label>
-
+                         <textarea class="form-control form-area required"style="resize: none;" name="message" placeholder="How we can serve you ?" id="message" rows="5" ></textarea>
+                         <label id="message-error" class="error mb-0" for="message"style="display:none;"> </label>
                       </div>
                    </div>
                 </div>
-                <div class="form-check form-check-inline check-box">
-                   <input class="form-check-input" name="check" type="checkbox" id="check" value="option1" >
-                   <label class="form-check-label" for="check"> Sign up for our email list for updates, promotions, and more.</label>
+                <div class="row">
+                    <div class="col-md-12 col-lg-8 mb-3">
+                        <div class="form-check form-check-inline check-box">
+                        <input class="form-check-input" name="check" type="checkbox" id="check" value="option1" >
+                        <label class="form-check-label" for="check"> Sign up for our email list for updates, promotions, and more.</label>
+                        </div>
+                    </div>
                 </div>
-                <br>
-                <label id="check-error" class="error" for="check" style="display: none"></label>
                 <div class="form-button">
                    <button type="submit" id="sendbtn" data-style="expand-right" class="primary-Btn">Send <i class="las la-arrow-right"></i></button>
 
                 </div>
-                <div class="col-md-12 col-lg-8">
+                <div class="col-md-12 col-lg-8 mb-3">
                    <p class="form-text">
                       This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy </a>and <a href="https://policies.google.com/terms">Terms of Service </a>apply.
                    </p>
@@ -73,55 +76,23 @@
 @endsection
  @section('mail-script')
     <script>
-
-        $(document).ready(function(){
-            $('#success').hide();
-            $('#sendForm').on('submit',function(e){
-                e.preventDefault();
-                var validation = $('#sendForm').validate({
-                    rules:{
-                        name:{
-                            required:true,
-                        },
-                        email:{
-                            required:true,
-                            email:true,
-                        },
-                        phone_no:{
-                            required:true,
-                        }
-                        ,
-                        message:{
-                            required:true
-                        },
-                        check:{
-                            required:true
-                        }
-                    },
-
-                });
-                // var valid = validation.valid();
-                var valid = $("#sendForm").valid();
-
-                if(!valid){
-                    validation.focusInvalid();
-                    return false;
-                }
-                else{
-
-                    var form = $('#sendForm')[0];
-                    var formdata = new FormData(form);
+        $(document).ready(function() {
+            $('#sendForm').validate({
+                submitHandler: function(form, e) {
+                    e.preventDefault();
+                    var formdata = new FormData($('#sendForm')[0]);
                     var l = Ladda.create(document.querySelector('#sendbtn'));
                     $.ajax({
                         url:"{{route('mail')}}",
-                        method:'post',
+                        method:'POST',
                         data:formdata,
                         dataType:'json',
                         processData: false,
                         contentType: false,
                         beforeSend:function(){
                             l.start();
-
+                            $('#notification').html();
+                            $('#notification').addClass('d-none');
                         },
                         success:function(res)
                         {
@@ -129,16 +100,20 @@
                             if(!res.success && res.status==2)
                             {
                                 $.each( res.error, function( key, value ) {
-                                $('#'+key+'-error').show().html(value);
-                                $('#'+key).addClass('is-invalid');
+
+                                    $('#'+key+'-error').show().html(value);
+                                    $('#'+key).addClass('error');
+
                                 });
                             }
                             else if(res.success && res.status ==1)
                             {
                                 l.stop();
                                 $('#sendForm').trigger('reset');
-                                $('#success').html(res.message);
-                                $('#success').show();
+                                $('#notification').html(res.message);
+                                $('#notification').removeClass('d-none');
+                                $('#notification').addClass('alert-success');
+                                $('#notification').removeClass('alert-danger');
                             }
                         },
                         error: function (jqXHR, exception) {
@@ -158,16 +133,16 @@
                                 msg = 'Ajax request aborted.';
                             } else {
                                 msg = 'Uncaught Error.\n' + jqXHR.responseText;
-                             }
-                             alert(msg);
-                            },
+                            }
+                            $('#notification').html(msg);
+                            $('#notification').removeClass('d-none');
+                            $('#notification').removeClass('alert-success');
+                            $('#notification').addClass('alert-danger');
+                        },
                     });
-
-
+                    return false;
                 }
-
             });
-
         });
     </script>
  @endsection
