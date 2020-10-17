@@ -51,7 +51,7 @@ class MailerController extends Controller
         if ($resultJson->score >= 0.3) {
             //Validation was successful, add your form submission logic here
 
-            Mail::to('amar123@yopmail.com')->send(new ContactMail($request->all()));
+            Mail::to('info@thefishjoint.com')->send(new ContactMail($request->all()));
             $customer_data=[
                 'name'=>$request->name,
                 'email'=>$request->email,
