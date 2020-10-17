@@ -1,7 +1,7 @@
  <!--Navbar start -->
  <div class="container">
     <nav class="mb-1 p-0 navbar navbar-expand-lg">
-       <a class="navbar-brand" href="/"><img class="logo" src="{{ asset('img/logo.png') }}" alt="logo"></a>
+       <a class="navbar-brand" href="{{ route('home') }}"><img class="logo" src="{{ asset('img/logo.png') }}" alt="logo"></a>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
           aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
        <i class="las la-bars mobile-icon"></i>
@@ -9,17 +9,17 @@
        <div class="collapse mobile-view navbar-collapse" id="navbarSupportedContent-4">
           <ul class="navbar-nav ml-auto">
              <li class="nav-item  ">
-                <a class="nav-link @yield('home')" href="\">
+                <a class="nav-link @yield('home')" href="{{ route('home') }}">
                 Home
                 </a>
              </li>
              <li class="nav-item">
-                <a class="nav-link @yield('about-us')" href="\about-us">
+                <a class="nav-link @yield('about-us')" href="{{ route('about-us') }}">
                 About Us
                 </a>
              </li>
              <li class="nav-item">
-                <a class="nav-link @yield('menu')" href="\menu">
+                <a class="nav-link @yield('menu')" href="{{ route('menu') }}">
                 Menu
                 </a>
              </li>

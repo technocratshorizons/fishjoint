@@ -3,13 +3,12 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Stolve</title>
+<title>Fish joint</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
 <meta content="" name="description">
 <!-- Favicons -->
-<link href="resources/images/favicon.ico" rel="icon">
-<link href="resources/images/favicon.ico" rel="apple-touch-icon">
+
 </head>
 <body>
 <div style="padding: 40px 0;  box-sizing:border-box; margin: 0px; width:100%; background: #fff; color: #333; overflow-x: hidden; font-family: Verdana; ">

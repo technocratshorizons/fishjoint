@@ -38,7 +38,7 @@
                           <h1>Fish Curry with Lotus <span>Stems.</span></h1>
                           <p>Etiam eget urna dictum, egestas ex nec, dapibus ante. Duis at mi a magna aliquam accumsan.</p>
                           <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="primary-Btn">Order Now <i class="las la-arrow-right"></i></a>
-                          <a href="/menu" class="secondary-Btn">See full Menu <i class="las la-arrow-right"></i></a>
+                          <a href="{{ route('menu') }}" class="secondary-Btn">See full Menu <i class="las la-arrow-right"></i></a>
                        </div>
                     </div>
                  </div>
@@ -62,7 +62,7 @@
         <div class="about-text">
            <h1 class="heading">HOOKED@FIRST BITE</h1>
            <p class="small-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text...</p>
-           <a href="/about-us" class="primary-Btn">Read More <i class="las la-arrow-right"></i></a>
+           <a href="{{ route('about-us') }}" class="primary-Btn">Read More <i class="las la-arrow-right"></i></a>
         </div>
      </section>
      <!-- about us end -->
@@ -299,7 +299,7 @@
                           </button>
                        </a>
                        <div class="menu-btn">
-                          <a href="/menu" class="secondary-Btn">See full Menu <i class="las la-arrow-right"></i></a>
+                          <a href="{{ route('menu') }}" class="secondary-Btn">See full Menu <i class="las la-arrow-right"></i></a>
                        </div>
                     </div>
                  </div>

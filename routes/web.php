@@ -16,13 +16,13 @@ use App\Http\Controllers\MailerController;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('home');
 
 Route::get('/menu', function () {
     return view('menu');
-});
+})->name('menu');
 
 Route::get('/about-us', function () {
     return view('about-us');
-});
+})->name('about-us');
 Route::post('/sendmail', [MailerController::class,'sendRequest'])->name('mail');
