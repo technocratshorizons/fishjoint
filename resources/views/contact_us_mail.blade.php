@@ -22,7 +22,7 @@
         <div style="float:left; font-size:16px;width:100%; line-height: 26px;border-top: 1px solid #ccc;">
             <div style="font-size: 15px;color: #333; font-weight: 600;">
                 <p>Hello Admin!</p>
-                <p style="float:left"><strong>{{ $customer['name'] }}</strong>has sent You mail from contact us form of Fish Joint</p>
+                <p style="float:left"><strong>{{ $customer['name'] }}</strong> has sent You mail from contact us form of Fish Joint</p>
             </div>
         </div>
             <strong>Name:</strong> {{ $customer['name'] }}

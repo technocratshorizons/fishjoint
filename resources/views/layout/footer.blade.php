@@ -24,7 +24,7 @@
                                 <span>
                           <i class="las la-phone-volume"></i>
                           </span>
-                                <p class="small-text">(954) 634-0277</p>
+                                <a href="tel:9546340277"> <p class="small-text">(954) 634-0277</p></a>
                             </div>
                         </div>
                     </div>

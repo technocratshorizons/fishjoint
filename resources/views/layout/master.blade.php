@@ -6,11 +6,7 @@
         <title>@yield('page-title')|The Fish Joint</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         @include('layout.head')
-        <style>
-            .error{
-                color:red;
-            }
-        </style>
+        
     </head>
 <body>
 

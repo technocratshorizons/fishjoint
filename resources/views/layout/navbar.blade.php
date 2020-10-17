@@ -1,7 +1,7 @@
  <!--Navbar start -->
  <div class="container">
     <nav class="mb-1 p-0 navbar navbar-expand-lg">
-       <a class="navbar-brand" href="index.html"><img class="logo" src="{{ asset('img/logo.png') }}" alt="logo"></a>
+       <a class="navbar-brand" href="/"><img class="logo" src="{{ asset('img/logo.png') }}" alt="logo"></a>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
           aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
        <i class="las la-bars mobile-icon"></i>

@@ -49,6 +49,7 @@
                         <label class="form-check-label" for="check"> Sign up for our email list for updates, promotions, and more.</label>
                         </div>
                     </div>
+                   <input type="hidden" name="recaptcha" id="recaptcha">
                 </div>
                 <div class="form-button">
                    <button type="submit" id="sendbtn" data-style="expand-right" class="primary-Btn">Send <i class="las la-arrow-right"></i></button>
@@ -73,6 +74,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Ladda/1.0.6/ladda.jquery.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/additional-methods.min.js" ></script>
+<script src="https://www.google.com/recaptcha/api.js?render={{ config('services.recaptcha.sitekey') }}"></script>
 @endsection
  @section('mail-script')
     <script>
@@ -99,6 +101,13 @@
                             l.stop();
                             if(!res.success && res.status==2)
                             {
+                                if(res.captcha)
+                                {
+                                    $('#notification').html(res.captcha);
+                                    $('#notification').removeClass('d-none');
+                                    $('#notification').removeClass('alert-success');
+                                    $('#notification').addClass('alert-danger');
+                                }
                                 $.each( res.error, function( key, value ) {
 
                                     $('#'+key+'-error').show().html(value);
@@ -143,6 +152,16 @@
                     return false;
                 }
             });
+
+            // google captcha
+            grecaptcha.ready(function() {
+                grecaptcha.execute('{{ config('services.recaptcha.sitekey') }}', {action: 'contact'}).then(function(token) {
+                    if (token) {
+                    document.getElementById('recaptcha').value = token;
+                    }
+                });
+            });
+
         });
     </script>
  @endsection
