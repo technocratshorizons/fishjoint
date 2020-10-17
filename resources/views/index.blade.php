@@ -38,7 +38,7 @@
                           <h1>Fish Curry with Lotus <span>Stems.</span></h1>
                           <p>Etiam eget urna dictum, egestas ex nec, dapibus ante. Duis at mi a magna aliquam accumsan.</p>
                           <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="primary-Btn">Order Now <i class="las la-arrow-right"></i></a>
-                          <a href="menu.html" class="secondary-Btn">See full Menu <i class="las la-arrow-right"></i></a>
+                          <a href="/menu" class="secondary-Btn">See full Menu <i class="las la-arrow-right"></i></a>
                        </div>
                     </div>
                  </div>
