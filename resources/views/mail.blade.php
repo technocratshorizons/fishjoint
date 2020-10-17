@@ -52,7 +52,7 @@
                    <input type="hidden" name="recaptcha" id="recaptcha">
                 </div>
                 <div class="form-button">
-                   <button type="submit" id="sendbtn" data-style="expand-right" class="primary-Btn">Send <i class="las la-arrow-right"></i></button>
+                   <button type="submit" id="sendbtn" data-style="zoom-in" class="primary-Btn">Send <i class="las la-arrow-right"></i></button>
 
                 </div>
                 <div class="col-md-12 col-lg-8 mb-3">
