@@ -258,16 +258,16 @@
                     <!-- Tabs content -->
                     <div class="tab-content" id="v-pills-tabContent">
                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                          <img class="menu-img" src="img/menu-1.png" alt="menu-img">
+                          <img class="menu-img" src="{{ asset('img/menu-1.png') }}" alt="menu-img">
                        </div>
                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                          <img class="menu-img" src="img/menu-2.png" alt="menu-img">
+                          <img class="menu-img" src="{{ asset('img/menu-2.png') }}" alt="menu-img">
                        </div>
                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                          <img class="menu-img" src="img/menu-3.png" alt="menu-img">
+                          <img class="menu-img" src="{{ asset('img/menu-3.png') }}" alt="menu-img">
                        </div>
                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                          <img class="menu-img" src="img/menu-4.png" alt="menu-img">
+                          <img class="menu-img" src="{{ asset('img/menu-4.png') }}" alt="menu-img">
                        </div>
                     </div>
                  </div>
@@ -326,7 +326,7 @@
                        <p class="small-text">Best Mahi sandwich I’ve had in years and easily the best in the county. Will definitely be returning.</p>
                     </div>
                     <div class="user-detail hide-user">
-                       <img class="rounded-circle user-img" src="img/user-1.png" alt="user-img">
+                       <img class="rounded-circle user-img" src="{{ asset('img/user-1.png') }}" alt="user-img">
                        <h4 class="user-name">Kelly Byron</h4>
                        <p class="post-date">9/16/2020</p>
                     </div>
@@ -343,7 +343,7 @@
                        <p class="small-text">I had a delicious ahi tuna salad, mom's mahi sandwich was fabulous. Fast service. Highly recommend!</p>
                     </div>
                     <div class="user-detail hide-user">
-                       <img class="rounded-circle user-img" src="img/user-1.png" alt="user-img">
+                       <img class="rounded-circle user-img" src="{{ asset('img/user-1.png') }}" alt="user-img">
                        <h4 class="user-name">Kelly Byron</h4>
                        <p class="post-date">9/16/2020</p>
                     </div>
@@ -360,7 +360,7 @@
                        <p class="small-text">Best Mahi sandwich I’ve had in years and easily the best in the county. Will definitely be returning.</p>
                     </div>
                     <div class="user-detail hide-user">
-                       <img class="rounded-circle user-img" src="img/user-1.png" alt="user-img">
+                       <img class="rounded-circle user-img" src="{{ asset('img/user-1.png') }}" alt="user-img">
                        <h4 class="user-name">Kelly Byron</h4>
                        <p class="post-date">9/16/2020</p>
                     </div>
@@ -377,7 +377,7 @@
                        <p class="small-text">Best Mahi sandwich I’ve had in years and easily the best in the county. Will definitely be returning.</p>
                     </div>
                     <div class="user-detail hide-user">
-                       <img class="rounded-circle user-img" src="img/user-1.png" alt="user-img">
+                       <img class="rounded-circle user-img" src="{{ asset('img/user-1.png') }}" alt="user-img">
                        <h4 class="user-name">Kelly Byron</h4>
                        <p class="post-date">9/16/2020</p>
                     </div>
@@ -394,7 +394,7 @@
                        <p class="small-text">Best Mahi sandwich I’ve had in years and easily the best in the county. Will definitely be returning.</p>
                     </div>
                     <div class="user-detail hide-user">
-                       <img class="rounded-circle user-img" src="img/user-1.png" alt="user-img">
+                       <img class="rounded-circle user-img" src="{{ asset('img/user-1.png') }}" alt="user-img">
                        <h4 class="user-name">Kelly Byron</h4>
                        <p class="post-date">9/16/2020</p>
                     </div>
@@ -411,7 +411,7 @@
                        <p class="small-text">Best Mahi sandwich I’ve had in years and easily the best in the county. Will definitely be returning.</p>
                     </div>
                     <div class="user-detail hide-user">
-                       <img class="rounded-circle user-img" src="img/user-1.png" alt="user-img">
+                       <img class="rounded-circle user-img" src="{{ asset('img/user-1.png') }}" alt="user-img">
                        <h4 class="user-name">Kelly Byron</h4>
                        <p class="post-date">9/16/2020</p>
                     </div>
@@ -428,7 +428,7 @@
                        <p class="small-text">Best Mahi sandwich I’ve had in years and easily the best in the county. Will definitely be returning.</p>
                     </div>
                     <div class="user-detail hide-user">
-                       <img class="rounded-circle user-img" src="img/user-1.png" alt="user-img">
+                       <img class="rounded-circle user-img" src="{{ asset('img/user-1.png') }}" alt="user-img">
                        <h4 class="user-name">Kelly Byron</h4>
                        <p class="post-date">9/16/2020</p>
                     </div>

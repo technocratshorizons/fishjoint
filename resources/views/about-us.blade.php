@@ -10,12 +10,13 @@
         </div>
      </section>
      <!-- small-banner end -->
+
      <!-- Special Events start -->
      <section class="online-delivery special-events">
         <div class="container">
            <div class="row">
               <div class="col-md-6 order-md-1">
-                 <img class="menu-img" src="img/about-1.png" alt="menu-img">
+                    <img class="menu-img" src="{{ asset('img/about-1.png') }}" alt="menu-img">
               </div>
               <div class="col-md-6">
                  <div class="delivery-text">
@@ -34,14 +35,14 @@
      <section class="catering-service">
         <div class="container">
            <div class="serive-bg">
-              <img class="dish-left" src="img/about-2.png" alt="menu-img">
+              <img class="dish-left" src="{{ asset('img/about-2.png') }}" alt="menu-img">
               <h2>The future of catering services start from here, You can
                  order Your Favorite playlist that you already like it.
               </h2>
               <div class="text-center service-btn">
                  <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="secondary-Btn">Order Now <i class="las la-arrow-right"></i></a>
               </div>
-              <img class="dish-right" src="img/about-3.png" alt="menu-img">
+              <img class="dish-right" src="{{ asset('img/about-3.png') }}" alt="menu-img">
            </div>
         </div>
      </section>
@@ -51,7 +52,7 @@
         <div class="container">
            <div class="row">
               <div class="col-md-7">
-                 <img class="menu-img" src="img/about-4.png" alt="menu-img">
+                 <img class="menu-img" src="{{ asset('img/about-4.png') }}" alt="menu-img">
               </div>
               <div class="col-md-5">
                  <div class="delivery-text">

@@ -65,7 +65,7 @@
        </div>
     </div>
     <div>
-       <img  class="contact-img" src="img/contact-img.png" alt="img">
+       <img  class="contact-img" src="{{ asset('img/contact-img.png') }}" alt="img">
     </div>
  </section>
 @section('page-script')
