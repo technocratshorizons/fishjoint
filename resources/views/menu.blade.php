@@ -1,6 +1,6 @@
 @extends('layout.master')
 
-@section('page-title', 'menu')
+@section('page-title', 'Menu')
 @section('menu', 'active')
 @section('content')
          <!-- small-banner start -->
