@@ -265,17 +265,19 @@ body {
 }
 
 .social-icons .icons img {
-    padding-left: 30px;
+    padding-right: 30px;
 }
 
-.social-icons .icons::before {
+.top-banner .line {
     content: ' ';
-    width: 8%;
+    width: 7%;
     height: 4px;
     background: black;
     display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
 }
-
 
 /*Banner end*/
 
@@ -629,7 +631,7 @@ body {
     background: #fafafa;
     height: 100%;
     display: inline-block;
-    width: 500px;
+    width: 32%;
     position: absolute;
     top: 0;
     right: 0;
@@ -1807,3 +1809,86 @@ button:focus {
         padding-left: 0;
     }
 }
+
+@media only screen and (min-width :1368px) and (max-width: 1680px) {
+.owl-one .owl-nav {
+    right: 16%;
+}
+.about-text {
+    padding-right: 19%;
+    padding-bottom: 200px;
+}
+.owl-two .owl-nav {
+    right: 30%;
+}
+.top-banner .line {
+    width: 8%;
+}
+.online-delivery .line::before {
+     width: 8%;
+}
+    }
+
+    @media only screen and (min-width :1680px) and (max-width: 1920px) {
+.owl-one .owl-nav {
+    right: 21%;
+}
+.about-text {
+    padding-right: 21%;
+    padding-bottom: 200px;
+}
+.owl-two .owl-nav {
+    right: 29%;
+}
+.owl-two .item {
+    width: 84%;
+    margin: 0 auto;
+}
+.our-chef .right-slider {
+    width: 66%;
+}
+.our-menu::after {
+    width: 36%;
+}
+.top-banner .line {
+    width: 15%;
+}
+.online-delivery .line::before {
+     width: 15%;
+}
+
+}
+
+
+
+    @media only screen and (min-width :1920px) and (max-width: 3840px) {
+.owl-one .owl-nav {
+    right: 21%;
+}
+.about-text {
+    padding-right: 21%;
+    padding-bottom: 200px;
+}
+.owl-two .owl-nav {
+    right: 29%;
+}
+.owl-two .item {
+    width: 84%;
+    margin: 0 auto;
+}
+.our-chef .right-slider {
+    width: 66%;
+}
+.our-menu::after {
+    width: 36%;
+}
+.top-banner .line {
+    width: 15%;
+}
+.online-delivery .line::before {
+     width: 15%;
+}
+
+}
+
+

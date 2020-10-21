@@ -45,6 +45,9 @@
               </div>
            </div>
         </div>
+        <div class="line">
+        </div>
+        <div class="container">
         <div class="social-icons">
            <div class="icons">
               <a href="https://www.facebook.com/The-Fish-Joint-Restaurant-107686544092518/" target="_blank"><img src="{{ asset('img/icons/fb.png') }}" alt="fb-icon"></a>
@@ -52,6 +55,7 @@
               <a href="https://www.yelp.com/biz/the-fish-joint-coconut-creek" target="_blank"><img src="{{ asset('img/icons/yelp.png') }}" alt="fb-icon"></a>
            </div>
         </div>
+      </div>
      </section>
      <!-- Banner end -->
      <!-- about us start -->

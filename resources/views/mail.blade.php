@@ -55,11 +55,13 @@
                    <button type="submit" id="sendbtn" data-style="zoom-in" class="primary-Btn">Send <i class="las la-arrow-right"></i></button>
 
                 </div>
+                <div class="row">
                 <div class="col-md-12 col-lg-8 mb-3">
                    <p class="form-text">
                       This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy </a>and <a href="https://policies.google.com/terms">Terms of Service </a>apply.
                    </p>
                 </div>
+              </div>
              </form>
           </div>
        </div>
