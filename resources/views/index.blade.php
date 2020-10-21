@@ -330,9 +330,9 @@
                        <p class="small-text">Best Mahi sandwich I’ve had in years and easily the best in the county. Will definitely be returning.</p>
                     </div>
                     <div class="user-detail hide-user">
-                       <img class="rounded-circle user-img" src="{{ asset('img/user-1.png') }}" alt="user-img">
-                       <h4 class="user-name">Kelly Byron</h4>
-                       <p class="post-date">9/16/2020</p>
+                       <img class="rounded-circle user-img" src="{{ asset('img/user-2.png') }}" alt="user-img">
+                       <h4 class="user-name">Tony M</h4>
+                       <p class="post-date">9/19/2020</p>
                     </div>
                  </div>
                  <div class="item active">
@@ -361,12 +361,12 @@
                           <i class="las la-star"></i>
                           <i class="las la-star"></i>
                        </div>
-                       <p class="small-text">Best Mahi sandwich I’ve had in years and easily the best in the county. Will definitely be returning.</p>
+                       <p class="small-text">My wife and I got two lobster rolls today one hot and one cold. Both of them were very delicious. <span class="p-text"> They were overflowing with meat! We highly recommend this place for anyone looking for fresh seafood. Our only recommendation is that perhaps the bun itself could have garlic or have more butter or cheddar and be toasted. This would add to the flavor in our opinion but having said that we WILL be returning ..there's no question. This was my first time ever having a lobster roll and my wife has had it many times and we both have to say two thumbs up.</span> <a type="button" class="show-text" href="javascript:void(0)">Read More</a></p>
                     </div>
                     <div class="user-detail hide-user">
-                       <img class="rounded-circle user-img" src="{{ asset('img/user-1.png') }}" alt="user-img">
-                       <h4 class="user-name">Kelly Byron</h4>
-                       <p class="post-date">9/16/2020</p>
+                       <img class="rounded-circle user-img" src="{{ asset('img/user-2.png') }}" alt="user-img">
+                       <h4 class="user-name">Thomas Flewellyn</h4>
+                       <p class="post-date">8/23/2020</p>
                     </div>
                  </div>
                  <div class="item">
@@ -378,12 +378,12 @@
                           <i class="las la-star"></i>
                           <i class="las la-star"></i>
                        </div>
-                       <p class="small-text">Best Mahi sandwich I’ve had in years and easily the best in the county. Will definitely be returning.</p>
+                       <p class="small-text">A coworker recommended this place and I am really happy I listened to his advice.<span class="p-text">The fish and chips are just great and fresh, the grits and shrimp 👍👍👍 awesome and the conch fritters (just saying that I won’t have to go to Nassau to eat them again) great job just great job and superb service as well</span>  <a type="button" class="show-text" href="javascript:void(0)">Read More</a></p>
                     </div>
                     <div class="user-detail hide-user">
-                       <img class="rounded-circle user-img" src="{{ asset('img/user-1.png') }}" alt="user-img">
-                       <h4 class="user-name">Kelly Byron</h4>
-                       <p class="post-date">9/16/2020</p>
+                       <img class="rounded-circle user-img" src="{{ asset('img/user-4.png') }}" alt="user-img">
+                       <h4 class="user-name">Gabriel & Madelyn Garcia</h4>
+                       <p class="post-date">7/4/2020</p>
                     </div>
                  </div>
                  <div class="item">
@@ -395,48 +395,15 @@
                           <i class="las la-star"></i>
                           <i class="las la-star"></i>
                        </div>
-                       <p class="small-text">Best Mahi sandwich I’ve had in years and easily the best in the county. Will definitely be returning.</p>
+                       <p class="small-text">Just happened to be in the plaza so decided to try it because I heard great things about the place. <span class="p-text"> Got the conch fritters and fish and chips. Conch fritters were good but couldn't eat the fish and chips as there was hair in it. I called back and spoke with someone said they would issue credit. No credit to my card but very disappointed and disgusted that there was a hair in the food. Probably better off the fish and chips seemed like all breading no fish.</span><a type="button" class="show-text"  href="javascript:void(0)">Read More</a></p>
                     </div>
                     <div class="user-detail hide-user">
-                       <img class="rounded-circle user-img" src="{{ asset('img/user-1.png') }}" alt="user-img">
-                       <h4 class="user-name">Kelly Byron</h4>
-                       <p class="post-date">9/16/2020</p>
+                       <img class="rounded-circle user-img" src="{{ asset('img/user-5.png') }}" alt="user-img">
+                       <h4 class="user-name">Supergirly</h4>
+                       <p class="post-date">9/22/2020</p>
                     </div>
                  </div>
-                 <div class="item">
-                    <div class="user-content">
-                       <div class="rating">
-                          <i class="las la-star"></i>
-                          <i class="las la-star"></i>
-                          <i class="las la-star"></i>
-                          <i class="las la-star"></i>
-                          <i class="las la-star"></i>
-                       </div>
-                       <p class="small-text">Best Mahi sandwich I’ve had in years and easily the best in the county. Will definitely be returning.</p>
-                    </div>
-                    <div class="user-detail hide-user">
-                       <img class="rounded-circle user-img" src="{{ asset('img/user-1.png') }}" alt="user-img">
-                       <h4 class="user-name">Kelly Byron</h4>
-                       <p class="post-date">9/16/2020</p>
-                    </div>
-                 </div>
-                 <div class="item">
-                    <div class="user-content">
-                       <div class="rating">
-                          <i class="las la-star"></i>
-                          <i class="las la-star"></i>
-                          <i class="las la-star"></i>
-                          <i class="las la-star"></i>
-                          <i class="las la-star"></i>
-                       </div>
-                       <p class="small-text">Best Mahi sandwich I’ve had in years and easily the best in the county. Will definitely be returning.</p>
-                    </div>
-                    <div class="user-detail hide-user">
-                       <img class="rounded-circle user-img" src="{{ asset('img/user-1.png') }}" alt="user-img">
-                       <h4 class="user-name">Kelly Byron</h4>
-                       <p class="post-date">9/16/2020</p>
-                    </div>
-                 </div>
+                 
               </div>
            </div>
         </div>
@@ -514,6 +481,22 @@
           }
         }
       })
+
+      $("body").on('click', '.show-text', function(){
+        var parent = $(this).parent();
+        parent.find('.p-text').css('display', 'block');
+        $(this).text('Show Less');
+        $(this).addClass('show-less');
+        $(this).removeClass('show-text');
+      });
+
+      $("body").on('click', '.show-less', function(){
+        var parent = $(this).parent();
+        parent.find('.p-text').css('display', 'none');
+        $(this).text('Read More');
+        $(this).addClass('show-text');
+        $(this).removeClass('show-less');
+      });
 
     })
 

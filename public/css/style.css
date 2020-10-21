@@ -648,7 +648,9 @@ body {
 
 
 /*testimonials start*/
-
+.user-content .p-text{
+    display: none;
+}
 .testimonials {
     text-align: center;
     margin-top: 90px;
