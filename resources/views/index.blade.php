@@ -16,8 +16,9 @@
                     </div>
                     <div class="col-md-6">
                        <div class="banner-text">
-                          <h1>Fish Curry with Lotus <span>Stems.</span></h1>
-                          <p>Etiam eget urna dictum, egestas ex nec, dapibus ante. Duis at mi a magna aliquam accumsan.</p>
+                          <h1>Yes, We <span>Deliver!</span></h1>
+                          <br>
+                          <br>
                           <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="primary-Btn">Order Now <i class="las la-arrow-right"></i></a>
                           <a href="{{ route('menu') }}" class="secondary-Btn">See full Menu <i class="las la-arrow-right"></i></a>
                        </div>
@@ -25,6 +26,7 @@
                  </div>
               </div>
            </div>
+           <!----
            <div class="item">
               <div class="container">
                  <div class="row">
@@ -44,6 +46,7 @@
                  </div>
               </div>
            </div>
+           ---->
         </div>
         <div class="line">
         </div>
@@ -65,7 +68,7 @@
         </div>
         <div class="about-text">
            <h1 class="heading">HOOKED@FIRST BITE</h1>
-           <p class="small-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text...</p>
+           <p class="small-text">e. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text...</p>
            <a href="{{ route('about-us') }}" class="primary-Btn">Read More <i class="las la-arrow-right"></i></a>
         </div>
      </section>

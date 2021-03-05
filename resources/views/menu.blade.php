@@ -535,7 +535,7 @@
                 </div>
             </div>
             <div class="bottom-menu-img">
-                <img class="menu-img-2" src="{{asset('img/menu-6.png')}}" alt="img">
+                <img class="menu-img-2" src="{{ asset('img/menu-6.png') }}" alt="img">
             </div>
         </div>
     </section>
