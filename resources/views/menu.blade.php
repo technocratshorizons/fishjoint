@@ -30,7 +30,7 @@
     <section class="main-menu">
         <div class="container">
             <div class="menu-item pt-60">
-                <h1 class="heading">Little Bait</h1>
+                <h1 class="heading">Starters</h1>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="menu-content">
@@ -60,13 +60,14 @@
                     </div>
                     <div class="col-md-4">
                         <div class="menu-content">
-                            <h4>Clam Strips</h4>
-                            <p class="small-text">Fresh clams served crispy with cocktail & tartar sauce </p>
+                            <h4>Shrimp Ceviche</h4>
+                            <p class="small-text">Baby shrimp tossed with cucumbers, avocado, cilantro, red onion, tomato juice and lime served with chips
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="menu-content">
-                            <h4>Mahi Fingers</h4>
+                            <h4>coconut Strips</h4>
                             <p class="small-text">Crispy Mahi served with Joint sauce </p>
                         </div>
                     </div>
@@ -79,14 +80,31 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="menu-content">
-                            <h4>Shrimp Ceviche</h4>
-                            <p class="small-text">Baby shrimp tossed with cucumbers, avocado, cilantro, red onion, tomato juice and lime served with chips
-                            </p>
+                </div>
+            </div>
+        </div>
+		<div class="position-r">
+            <div class="container">
+                <div class="menu-item pt-60">
+                    <h1 class="heading">Crab Boils</h1>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="menu-content">
+                                <h4>Prices are subject to change die to market conditions*</h4>
+                                <ul>
+                                    <li>Snow Crab</li>
+                                    <li>Shrimp</li>
+									<li>Clams</li>
+                                    <li>Andouille Sausage</li>
+									<li>Corn on the cob potatoes in our garlic butter sauce</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="left-menu-img">
+                <img class="menu-img-1" src="{{ asset('img/menu-5.png') }}" alt="img">
             </div>
         </div>
         <div class="position-r">
@@ -101,18 +119,16 @@
                                 <ul>
                                     <li>Classic shallots, white wine and parsley</li>
                                     <li>Spicy fresh tomatoes, garlic and crushed red pepper</li>
-                                    <li>Scampi lemon, garlic and parsley</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="menu-content">
-                                <h4>Clams</h4>
-                                <p class="small-text p-1">Mussels</p>
+                                <h4>Mussels</h4>
+                                <p class="small-text p-1">Your Choice of Sauce</p>
                                 <ul>
                                     <li>Classic shallots, white wine and parsley</li>
                                     <li>Spicy fresh tomatoes, garlic and crushed red pepper</li>
-                                    <li>Scampi lemon, garlic and parsley</li>
                                 </ul>
                             </div>
                         </div>
@@ -141,32 +157,25 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="menu-content">
-                            <h4>Caesar (Small)</h4>
-                            <p class="small-text">Romaine, Parmesan cheese, croutons and Caesar dressing </p>
+                            <h4>Blackened Shirmp Caesar</h4>
+                            <p class="small-text">Romaine, Parmesan cheese, croutons tossed in Caesar dressing top with blackened shirmp.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="menu-content">
-                            <h4>Caesar (Large)</h4>
-                            <p class="small-text">Romaine, Parmesan cheese, croutons and Caesar dressing </p>
+                            <h4>Crab Salad</h4>
+                            <p class="small-text">Mixed greens, cucumbers, baby hierloom tomatoes, red onion topped with easoned jumbo lumb crab meat and red wine vinaigrette.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="menu-content">
-                            <h4>Mixed Green (Small)</h4>
-                            <p class="small-text">Cucumbers, baby heirloom tomatoes, red onion, feta cheese and red wine vinaigrette
+                            <h4>Side Salad</h4>
+                            <p class="small-text">Caesar or mixed greens.
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="menu-content">
-                            <h4>Mixed Green (Large)</h4>
-                            <p class="small-text">Cucumbers, baby heirloom tomatoes, red onion, feta cheese and red wine vinaigrette
-                            </p>
-                        </div>
-                    </div>
                     <div class="col-md-4">
                         <div class="menu-content">
                             <h4>Seared Ahi Tuna Salad</h4>
@@ -396,7 +405,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="menu-content">
-                            <h4>Grilled Chicken Sandwich</h4>
+                            <h4>Rosemary Chicken Sandwich</h4>
                             <p class="small-text">Chicken breast with lettuce, tomato, red onion and Joint sauce </p>
                         </div>
                     </div>
@@ -410,7 +419,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="menu-content">
-                            <h4>Parker’s Famous Grilled Cheese</h4>
+                            <h4>Famous Grilled Cheese</h4>
                             <p class="small-text">American & mozzarella cheese, garlic butter and fresh tomato </p>
                         </div>
                     </div>
@@ -427,12 +436,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="menu-content">
-                            <h4 class="pb-4">Mahi Fingers</h4>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="menu-content">
-                            <h4 class="pb-4">Grilled Cheese</h4>
+                            <h4 class="pb-4">Fish Fingers (Mahi)</h4>
                         </div>
                     </div>
                 </div>
@@ -483,7 +487,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="menu-content">
-                            <h4 class="pb-4">Cajun Rice</h4>
+                            <h4 class="pb-4">Rice</h4>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -504,11 +508,19 @@
                 <div class="menu-item pt-60">
                     <h1 class="heading">Dessert</h1>
                     <div class="row">
+					    <div class="col-md-4">
+                            <div class="menu-content">
+                                <h4 class="pb-4">Homemade bread pudding</h4>
+								<p class="small-text">Served with vanilla ice cream and caramel salt.</p>
+                            </div>
+                        </div>
                         <div class="col-md-4">
                             <div class="menu-content">
                                 <h4 class="pb-4">Key Lime Pie</h4>
                             </div>
                         </div>
+						</div>
+						<div class="row">
                         <div class="col-md-4">
                             <div class="menu-content">
                                 <h4 class="pb-4">Chocolate Cake</h4>

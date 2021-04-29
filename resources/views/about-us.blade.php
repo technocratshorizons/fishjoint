@@ -10,6 +10,22 @@
         </div>
      </section>
      <!-- small-banner end -->
+     <!-- ONLINE ORDERING start -->
+        <section class="order-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-lg-9">
+                        <h3>ONLINE ORDERING FOR TAKEOUT AND DELIVERY NOW AVAILABLE!</h3>
+                    </div>
+                    <div class="col-md-5 col-lg-3">
+                        <div class="service-btn">
+                            <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="secondary-Btn">Order Now <i class="las la-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- ONLINE ORDERING end -->
 
      <!-- Special Events start -->
      <section class="online-delivery special-events">
@@ -33,18 +49,18 @@
      <!-- Special Events end -->
      <!-- catering services start -->
      <section class="catering-service">
-        <div class="container">
            <div class="serive-bg">
               <img class="dish-left" src="{{ asset('img/about-2.png') }}" alt="menu-img">
+              <div class="container">
               <h2>The future of catering services start from here, You can
                  order Your Favorite playlist that you already like it.
               </h2>
               <div class="text-center service-btn">
                  <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="secondary-Btn">Order Now <i class="las la-arrow-right"></i></a>
               </div>
+            </div>
               <img class="dish-right" src="{{ asset('img/about-3.png') }}" alt="menu-img">
            </div>
-        </div>
      </section>
      <!-- catering services end -->
      <!-- Fresh and DELICIOUS start -->

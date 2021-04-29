@@ -1,4 +1,5 @@
 {{-- Footer start --}}
+
 <section class="footer">
     <div class="container">
         <div class="top-footer">
@@ -30,7 +31,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="footer-content">
-                            <h6>Hours</h6>
+                            <h6>Hours</h6>{{--
                             <div class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Open today: 11:00 am – 09:00 pm <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
@@ -42,7 +43,7 @@
                                     <li>Sat 11:00 am – 09:00 pm</li>
                                     <li>Sun Closed</li>
                                 </ul>
-                            </div>
+                            </div>--}}
                             <p class="small-text">Monday: Friday: 11am - 9pm<br> Saturday: 11am - 9pm<br> Sunday: Closed (Gone Fishing)
                             </p>
                         </div>
@@ -51,6 +52,9 @@
             </div>
         </div>
     </div>
+     <div class="scroll-top">
+        <button id="gotoTop" ><img class="surfboard-icon" src="{{ asset('img/surfboard.png') }}" alt="surfboard-icon" ></button>
+     </div>
     </div>
     <div class="bottom-footer">
         <div class="col-md-12">

@@ -5,7 +5,7 @@
 @section('content')
      <!-- Banner start -->
      <section class="top-banner">
-        <div class="owl-carousel owl-one">
+        <div class="owl-carousel owl-one hero-slider">
            <div class="item">
               <div class="container">
                  <div class="row">
@@ -16,9 +16,8 @@
                     </div>
                     <div class="col-md-6">
                        <div class="banner-text">
-                          <h1>Yes, We <span>Deliver!</span></h1>
-                          <br>
-                          <br>
+                          <h1>FISH N' CHIPS</h1>
+                          <p><font color="white" size="6"><strong>Served with chips, coleslaw and tartar sauce.</strong></font></p>
                           <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="primary-Btn">Order Now <i class="las la-arrow-right"></i></a>
                           <a href="{{ route('menu') }}" class="secondary-Btn">See full Menu <i class="las la-arrow-right"></i></a>
                        </div>
@@ -26,19 +25,18 @@
                  </div>
               </div>
            </div>
-           <!----
            <div class="item">
               <div class="container">
                  <div class="row">
                     <div class="col-md-6 order-md-1">
                        <div class="banner-img">
-                          <img src="{{ asset('img/banner-1.png') }}" alt="banner-img">
+                          <img src="{{ asset('img/banner-img1.png') }}" alt="banner-img">
                        </div>
                     </div>
                     <div class="col-md-6">
                        <div class="banner-text">
-                          <h1>Fish Curry with Lotus <span>Stems.</span></h1>
-                          <p>Etiam eget urna dictum, egestas ex nec, dapibus ante. Duis at mi a magna aliquam accumsan.</p>
+                          <h1>Trifecta  Special</h1>
+                          <p><font color="white" size="6"><strong>Mahi, Shrimp, and Scallops</strong></font></p>
                           <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="primary-Btn">Order Now <i class="las la-arrow-right"></i></a>
                           <a href="{{ route('menu') }}" class="secondary-Btn">See full Menu <i class="las la-arrow-right"></i></a>
                        </div>
@@ -46,29 +44,106 @@
                  </div>
               </div>
            </div>
-           ---->
-        </div>
-        <div class="line">
-        </div>
-        <div class="container">
-        <div class="social-icons">
-           <div class="icons">
-              <a href="https://www.facebook.com/The-Fish-Joint-Restaurant-107686544092518/" target="_blank"><img src="{{ asset('img/icons/fb.png') }}" alt="fb-icon"></a>
-              <a href="https://www.instagram.com/the_fishjoint/" target="_blank"><img src="{{ asset('img/icons/insta.png') }}" alt="fb-icon" ></a>
-              <a href="https://www.yelp.com/biz/the-fish-joint-coconut-creek" target="_blank"><img src="{{ asset('img/icons/yelp.png') }}" alt="fb-icon"></a>
+           <div class="item">
+              <div class="container">
+                 <div class="row">
+                    <div class="col-md-6 order-md-1">
+                       <div class="banner-img">
+                          <img src="{{ asset('img/banner-img2.png') }}" alt="banner-img">
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                       <div class="banner-text">
+                         <h1>Fried Trifecta</h1>
+                          <p><font color="white" size="6"><strong>freshly battered and fried to perfection!</strong></font></p>
+                          <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="primary-Btn">Order Now <i class="las la-arrow-right"></i></a>
+                          <a href="{{ route('menu') }}" class="secondary-Btn">See full Menu <i class="las la-arrow-right"></i></a>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+            <div class="item">
+              <div class="container">
+                 <div class="row">
+                    <div class="col-md-6 order-md-1">
+                       <div class="banner-img">
+                          <img src="{{ asset('img/banner-img3.png') }}" alt="banner-img">
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                       <div class="banner-text">
+                         <h1>Shrimp n' Grits</h1>
+                          <p><font color="white" size="6"><strong>Cheese Grits with cajun baby shrimp and bacon gravy.</strong></font></p>
+                          <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="primary-Btn">Order Now <i class="las la-arrow-right"></i></a>
+                          <a href="{{ route('menu') }}" class="secondary-Btn">See full Menu <i class="las la-arrow-right"></i></a>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+            <div class="item">
+              <div class="container">
+                 <div class="row">
+                    <div class="col-md-6 order-md-1">
+                       <div class="banner-img">
+                          <img src="{{ asset('img/banner-img4.png') }}" alt="banner-img">
+                       </div>
+                    </div>
+                    <div class="col-md-6">
+                       <div class="banner-text">
+                          <h1>Mixed Greens' Salad</h1>
+                          <p><font color="white" size="6"><strong>Cucumbers, baby heirloom tomatoes, red onion, feta cheese and red wine vinaigrette</strong></font></p>
+                          <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="primary-Btn">Order Now <i class="las la-arrow-right"></i></a>
+                          <a href="{{ route('menu') }}" class="secondary-Btn">See full Menu <i class="las la-arrow-right"></i></a>
+                       </div>
+                    </div>
+                 </div>
+              </div>
            </div>
         </div>
-      </div>
      </section>
      <!-- Banner end -->
+     <!-- Social start -->
+     <div class="social-icon-box"> 
+     <div class="line social-line"> 
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+               <div class="social-icons"> 
+           <div class="icons">
+              <a class="fb-icon" href="https://www.facebook.com/The-Fish-Joint-Restaurant-107686544092518/" target="_blank"><img class="icon-black" src="{{ asset('img/icons/fb-1.png') }}" alt="fb-icon">
+              <img class="icon-color" src="{{ asset('img/icons/fb-color.png') }}" alt="fb-icon"></a>
+              <a class="insta-icon" href="https://www.instagram.com/the_fishjoint/" target="_blank"><img class="icon-black" src="{{ asset('img/icons/insta-1.png') }}" alt="fb-icon" ><img class="icon-color" src="{{ asset('img/icons/insta-color.png') }}" alt="fb-icon" ></a>
+              <a class="yelp-icon" href="https://www.yelp.com/biz/the-fish-joint-coconut-creek" target="_blank"><img  class="icon-black" src="{{ asset('img/icons/pin-1.png') }}" alt="fb-icon"><img  class="icon-color" src="{{ asset('img/icons/pin-color.png') }}" alt="fb-icon"></a>
+           </div>
+        </div>
+            </div>
+            <div class="col-md-8">
+              <div class="highlight-text">
+                <h1>Fresh and Local</h1>
+              </div>
+              <div class="cool-stars">
+                <a href="https://www.yelp.com/biz/the-fish-joint-coconut-creek" target="_blank">
+                  <img class="star-icons" src="{{ asset('img/stars.png') }}" alt="Stars-img" >
+                </a>
+              </div>
+            </div>
+          </div>
+       
+        
+      </div>
+    </div>
+           <!-- Social end -->
      <!-- about us start -->
      <section class="about-us">
         <div class="left-img">
-           <img src="{{ asset('img/about-us.png') }}" alt="img">
+           <img src="{{ asset('img/about-us-1.png') }}" alt="img">
         </div>
         <div class="about-text">
            <h1 class="heading">HOOKED@FIRST BITE</h1>
-           <p class="small-text">e. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text...</p>
+           <p class="small-text">Fresh Seafood, Fresh Viggies, Cooked to order dishes, Friendly staff... What's not to like?</p>
            <a href="{{ route('about-us') }}" class="primary-Btn">Read More <i class="las la-arrow-right"></i></a>
         </div>
      </section>
@@ -79,7 +154,7 @@
         </div>
         <div class="container">
            <div class="row">
-              <div class="col-md-7">
+              <div class="col-12 col-md-7 col-xl-8">
                  <div class="delivery-text">
                     <h1 class="heading">Online Ordering For
                        Takeout And Delivery
@@ -121,8 +196,8 @@
               <div class="row">
                  <div class="col-lg-3 col-md-12">
                     <div class="chef-text">
-                       <h1 class="heading">Our Chef’s Special</h1>
-                       <p class="small-text">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                       <h1 class="heading">Yum Yumm Yummy!!!</h1>
+                       <p class="small-text">Every order is cooked fresh to order using only the best ingredients. Check out some of our loyal customers favorite items!</p>
                        <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="primary-Btn">Order Now <i class="las la-arrow-right"></i></a>
                     </div>
                  </div>
@@ -130,11 +205,11 @@
            </div>
         </div>
         <div class="right-slider">
-           <div class="owl-carousel owl-two" >
+           <div class="owl-carousel owl-two our-chefs-slider" >
               <div class="item">
                  <div class="box">
                     <div class="slide-img">
-                       <img src="{{ asset('img/slider-1.png') }}" alt="img">
+                       <img src="{{ asset('img/slider-4.png') }}" alt="img">
                     </div>
                     <div class="slide-content">
                        <div class="right-side-content">
@@ -147,14 +222,15 @@
                              <i class="las la-star-half-alt"></i>
                           </div>
                        </div>
-                       <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="order-link"><i class="las la-arrow-right"></i></a>
+                      <!--  <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="order-link"><i class="las la-arrow-right"></i></a> -->
+                       <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="order-link"> <span>ORDER NOW</span></a>
                     </div>
                  </div>
               </div>
               <div class="item">
                  <div class="box">
                     <div class="slide-img">
-                       <img src="{{ asset('img/slider-2.png') }}" alt="img">
+                       <img src="{{ asset('img/slider-5.png') }}" alt="img">					   
                     </div>
                     <div class="slide-content">
                        <div class="right-side-content">
@@ -167,14 +243,14 @@
                              <i class="las la-star-half-alt"></i>
                           </div>
                        </div>
-                       <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="order-link"><i class="las la-arrow-right"></i></a>
+                       <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="order-link"> <span>ORDER NOW</span></a>
                     </div>
                  </div>
               </div>
               <div class="item">
                  <div class="box">
                     <div class="slide-img">
-                       <img src="{{ asset('img/slider-3.png') }}" alt="img">
+                       <img src="{{ asset('img/slider-6.png') }}" alt="img">
                     </div>
                     <div class="slide-content">
                        <div class="right-side-content">
@@ -187,14 +263,14 @@
                              <i class="las la-star-half-alt"></i>
                           </div>
                        </div>
-                       <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="order-link"><i class="las la-arrow-right"></i></a>
+                       <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="order-link"> <span>ORDER NOW</span></a>
                     </div>
                  </div>
               </div>
               <div class="item">
                  <div class="box">
                     <div class="slide-img">
-                       <img src="{{ asset('img/slider-1.png') }}" alt="img">
+                       <img src="{{ asset('img/slider-7.png') }}" alt="img">
                     </div>
                     <div class="slide-content">
                        <div class="right-side-content">
@@ -207,47 +283,8 @@
                              <i class="las la-star-half-alt"></i>
                           </div>
                        </div>
-                       <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="order-link"><i class="las la-arrow-right"></i></a>
-                    </div>
-                 </div>
-              </div>
-              <div class="item">
-                 <div class="box">
-                    <div class="slide-img">
-                       <img src="{{ asset('img/slider-2.png') }}" alt="img">
-                    </div>
-                    <div class="slide-content">
-                       <div class="right-side-content">
-                          <h6>Fried Shrimp Platter</h6>
-                          <div class="rating">
-                             <i class="las la-star"></i>
-                             <i class="las la-star"></i>
-                             <i class="las la-star"></i>
-                             <i class="las la-star"></i>
-                             <i class="las la-star-half-alt"></i>
-                          </div>
-                       </div>
-                       <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="order-link"><i class="las la-arrow-right"></i></a>
-                    </div>
-                 </div>
-              </div>
-              <div class="item">
-                 <div class="box">
-                    <div class="slide-img">
-                       <img src="{{ asset('img/slider-3.png') }}" alt="img">
-                    </div>
-                    <div class="slide-content">
-                       <div class="right-side-content">
-                          <h6>Fried Shrimp Platter</h6>
-                          <div class="rating">
-                             <i class="las la-star"></i>
-                             <i class="las la-star"></i>
-                             <i class="las la-star"></i>
-                             <i class="las la-star"></i>
-                             <i class="las la-star-half-alt"></i>
-                          </div>
-                       </div>
-                       <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="order-link"><i class="las la-arrow-right"></i></a>
+                       <a href="https://www.toasttab.com/fish-joint/v3" target="_blank" class="order-link">
+                        <span>ORDER NOW</span></a>
                     </div>
                  </div>
               </div>
@@ -256,9 +293,12 @@
      </section>
      <!-- our chef end-->
      <!-- our menu start -->
+	 <?php /* ?>
      <section class="our-menu">
         <div class="container">
+           <!--
            <h1 class="heading">Our Best Menu</h1>
+           -->
            <div class="tabs-main">
               <div class="row">
                  <div class="col-lg-6 col-md-12 order-md-1">
@@ -279,7 +319,8 @@
                     </div>
                  </div>
                  <div class="col-md-12 col-lg-6">
-                    <!-- Tabs nav -->
+                    
+                    <!--
                     <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
                           <h5 class="heading-3 text-uppercase">Smoked Fish Dip</h5>
@@ -309,18 +350,20 @@
                           <a href="{{ route('menu') }}" class="secondary-Btn">See full Menu <i class="las la-arrow-right"></i></a>
                        </div>
                     </div>
+                  -->
                  </div>
               </div>
            </div>
         </div>
      </section>
+	 <?php */ ?>
      <!-- our menu end -->
      <!-- Why people love us start -->
      <section class="testimonials">
         <h1 class="heading">Why people love us</h1>
         <div class="testimonials-bg">
            <div class="container">
-              <div class="owl-carousel owl-three">
+              <div class="owl-carousel owl-three testimonial">
                  <div class="item">
                     <div class="user-content">
                        <div class="rating">
@@ -364,7 +407,7 @@
                           <i class="las la-star"></i>
                           <i class="las la-star"></i>
                        </div>
-                       <p class="small-text">My wife and I got two lobster rolls today one hot and one cold. Both of them were very delicious. <span class="p-text"> They were overflowing with meat! We highly recommend this place for anyone looking for fresh seafood. Our only recommendation is that perhaps the bun itself could have garlic or have more butter or cheddar and be toasted. This would add to the flavor in our opinion but having said that we WILL be returning ..there's no question. This was my first time ever having a lobster roll and my wife has had it many times and we both have to say two thumbs up.</span> <a type="button" class="show-text" href="javascript:void(0)">Read More</a></p>
+                       <p class="small-text">My wife and I got two lobster rolls today one hot and one cold. Both of them were very delicious. <span class="p-text"> They were overflowing with meat! We highly recommend this place for anyone looking for fresh seafood. Our only recommendation is that perhaps the bun itself could have garlic or have more butter or cheddar and be toasted. This would add to the flavor in our opinion but having said that we WILL be returning ..there's no question. This was my first time ever having a lobster roll and my wife has had it many times and we both have to say two thumbs up.</span> <a class="show-text" href="javascript:void(0)">Read More</a></p>
                     </div>
                     <div class="user-detail hide-user">
                        <img class="rounded-circle user-img" src="{{ asset('img/user-2.png') }}" alt="user-img">
@@ -381,7 +424,7 @@
                           <i class="las la-star"></i>
                           <i class="las la-star"></i>
                        </div>
-                       <p class="small-text">A coworker recommended this place and I am really happy I listened to his advice.<span class="p-text">The fish and chips are just great and fresh, the grits and shrimp 👍👍👍 awesome and the conch fritters (just saying that I won’t have to go to Nassau to eat them again) great job just great job and superb service as well</span>  <a type="button" class="show-text" href="javascript:void(0)">Read More</a></p>
+                       <p class="small-text">A coworker recommended this place and I am really happy I listened to his advice.<span class="p-text">The fish and chips are just great and fresh, the grits and shrimp 👍👍👍 awesome and the conch fritters (just saying that I won’t have to go to Nassau to eat them again) great job just great job and superb service as well</span>  <a class="show-text" href="javascript:void(0)">Read More</a></p>
                     </div>
                     <div class="user-detail hide-user">
                        <img class="rounded-circle user-img" src="{{ asset('img/user-4.png') }}" alt="user-img">
@@ -398,7 +441,7 @@
                           <i class="las la-star"></i>
                           <i class="las la-star"></i>
                        </div>
-                       <p class="small-text">Just happened to be in the plaza so decided to try it because I heard great things about the place. <span class="p-text"> Got the conch fritters and fish and chips. Conch fritters were good but couldn't eat the fish and chips as there was hair in it. I called back and spoke with someone said they would issue credit. No credit to my card but very disappointed and disgusted that there was a hair in the food. Probably better off the fish and chips seemed like all breading no fish.</span><a type="button" class="show-text"  href="javascript:void(0)">Read More</a></p>
+                       <p class="small-text">Just happened to be in the plaza so decided to try it because I heard great things about the place. <span class="p-text"> Got the conch fritters and fish and chips. Conch fritters were good but couldn't eat the fish and chips as there was hair in it. I called back and spoke with someone said they would issue credit. No credit to my card but very disappointed and disgusted that there was a hair in the food. Probably better off the fish and chips seemed like all breading no fish.</span><a class="show-text"  href="javascript:void(0)">Read More</a></p>
                     </div>
                     <div class="user-detail hide-user">
                        <img class="rounded-circle user-img" src="{{ asset('img/user-5.png') }}" alt="user-img">
@@ -418,50 +461,53 @@
 @section('page-bottom-script')
 <script>
     $(document).ready(function() {
-      $('.owl-one').owlCarousel({
+      $('.hero-slider').owlCarousel({
         loop: true,
         margin: 10,
+		autoplayHoverPause: true,
         responsiveClass: true,
+        autoplay:true,
         responsive: {
           0: {
             items: 1,
-            nav: true
+            nav: false
           },
           600: {
             items: 1,
-            nav: false
+            nav: true
           },
           1000: {
             items: 1,
             nav: true,
-            loop: false,
             margin: 20
           }
         }
       })
 
-       $('.owl-two').owlCarousel({
+       $('.our-chefs-slider').owlCarousel({
         loop: true,
         margin: 10,
         responsiveClass: true,
+		autoplayHoverPause: true,
+        autoplay:true,
         responsive: {
           0: {
             items: 1,
             nav: true
           },
           600: {
-            items: 2,
+            items: 1.5,
             nav: false
           },
           1000: {
-            items: 3,
+            items: 2.5,
             nav: true,
-            loop: false,
+            loop: true,
             margin: 20
           }
         }
       })
-       $('.owl-three').owlCarousel({
+       $('.testimonial').owlCarousel({
         loop: false,
         margin: 10,
         responsiveClass: true,

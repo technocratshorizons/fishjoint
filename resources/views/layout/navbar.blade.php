@@ -1,5 +1,6 @@
+<header>
  <!--Navbar start -->
- <div class="container">
+ <div class="container" id="scrollToTopBtn"> 
     <nav class="mb-1 p-0 navbar navbar-expand-lg">
        <a class="navbar-brand" href="{{ route('home') }}"><img class="logo" src="{{ asset('img/logo.png') }}" alt="logo"></a>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
@@ -43,3 +44,4 @@
     </nav>
  </div>
  <!--Navbar End-->
+</header>
