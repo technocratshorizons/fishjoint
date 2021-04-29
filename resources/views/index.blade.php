@@ -105,13 +105,13 @@
      </section>
      <!-- Banner end -->
      <!-- Social start -->
-     <div class="social-icon-box"> 
-     <div class="line social-line"> 
+     <div class="social-icon-box">
+     <div class="line social-line">
         </div>
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-               <div class="social-icons"> 
+               <div class="social-icons">
            <div class="icons">
               <a class="fb-icon" href="https://www.facebook.com/The-Fish-Joint-Restaurant-107686544092518/" target="_blank"><img class="icon-black" src="{{ asset('img/icons/fb-1.png') }}" alt="fb-icon">
               <img class="icon-color" src="{{ asset('img/icons/fb-color.png') }}" alt="fb-icon"></a>
@@ -131,8 +131,8 @@
               </div>
             </div>
           </div>
-       
-        
+
+
       </div>
     </div>
            <!-- Social end -->
@@ -230,7 +230,7 @@
               <div class="item">
                  <div class="box">
                     <div class="slide-img">
-                       <img src="{{ asset('img/slider-5.png') }}" alt="img">					   
+                       <img src="{{ asset('img/slider-5.png') }}" alt="img">
                     </div>
                     <div class="slide-content">
                        <div class="right-side-content">
@@ -319,7 +319,7 @@
                     </div>
                  </div>
                  <div class="col-md-12 col-lg-6">
-                    
+
                     <!--
                     <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
@@ -449,7 +449,7 @@
                        <p class="post-date">9/22/2020</p>
                     </div>
                  </div>
-                 
+
               </div>
            </div>
         </div>
