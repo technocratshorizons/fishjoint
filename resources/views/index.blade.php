@@ -461,6 +461,9 @@
 @section('page-bottom-script')
 <script>
     $(document).ready(function() {
+        var selector = document.getElementById("phone_no");
+        Inputmask({"mask": "(999) 999-9999"}).mask(selector);
+
       $('.hero-slider').owlCarousel({
         loop: true,
         margin: 10,

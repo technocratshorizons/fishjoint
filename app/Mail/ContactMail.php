@@ -29,7 +29,7 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        return $this->from($this->customer['email'])
+        return $this->from(env('MAIL_FROM_ADDRESS', 'noreply@thefishjoint.com'))
                     ->subject('Contact Us Form')
                     ->view('contact_us_mail');
     }

@@ -1,1 +1,2 @@
-require('./bootstrap');
+// require('./bootstrap');
+var Inputmask = require('inputmask');

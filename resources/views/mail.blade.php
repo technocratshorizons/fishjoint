@@ -28,7 +28,7 @@
                 <div class="row">
                    <div class="col-md-12 col-lg-8 mb-3">
                       <div class="form-group">
-                         <input type="number" class="form-control form-field required" name="phone_no" id="phone_no" placeholder="Phone Number *">
+                         <input type="text" class="form-control form-field required" name="phone_no" id="phone_no" placeholder="Phone Number *">
                          <label id="number-error" class="error mb-0" for="number"style="display:none;"> </label>
 
                       </div>

@@ -7,7 +7,9 @@ use App\Models\Enquiry;
 use App\Mail\ContactMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-
+// use Spatie\Newsletter\Newsletter;
+// use Spatie\Newsletter\NewsletterFacade as Newsletter;
+use Newsletter;
 
 class MailerController extends Controller
 {
@@ -63,6 +65,7 @@ class MailerController extends Controller
                 if($check_signup =='option1')
                 {
                     $customer_data['signup_email'] ='yes';
+                    Newsletter::subscribe($request->email, ['FNAME'=>$request->name, 'PHONE'=>$request->phone_no]);
                 }
                 else{
                     $customer_data['signup_email'] = 'no';
